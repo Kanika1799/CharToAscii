@@ -2,6 +2,19 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This app contains 4 test cases and 2 test suites. Two test suites include - 
+ 1. src/app.test.js
+ 2. src/calculateNew.test.js
+
+Jest is used for testing of function and its working. 
+
+In app.test.js fireEvent is used to triggering event for test cases.
+ 1. Input is searched in the app component with label "Type the letter".
+ 2. Value of test is passed into it. 
+ 3. Then using fireEvent.click() button is clicked with the text "Click Here".
+ 4. In paragraph p value of output test is checked.
+ 5. expect(p.textContent).toBe() function is used to check if expected output of test is same with our output.
+
 ## Available Scripts
 
 In the project directory, you can run:
